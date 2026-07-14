@@ -1,5 +1,8 @@
 const supabase = require('../config/conexion');
 
+exports.inicio = async (req, res) => {
+    res.render('pages/saludar');
+}
 exports.saludar = async (req, res) => {
     try {
         const data = await supabase .from('Productos') .select('*');

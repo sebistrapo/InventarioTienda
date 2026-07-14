@@ -10,8 +10,8 @@ app.set('view engine', 'ejs');
 // Paths
 
 
+app.get('/', controller.inicio);
 app.get('/saludar', controller.saludar);
-
 
 // Paths
 
